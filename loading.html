@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga del Juego</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+        
+        #playButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./combate.avif" alt="Cargando...">
+    <button id="playButton">Play</button>
+
+    <script>
+        // Cuando se hace clic en el botón "Play"
+        document.getElementById('playButton').addEventListener('click', function() {
+            // Redirigir a la página del juego
+            window.location.href = 'index.html'; // Asegúrate de que este sea el nombre de tu archivo principal del juego
+        });
+    </script>
+</body>
+
+</html>
